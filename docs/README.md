@@ -18,14 +18,12 @@ Elevation data was calculated using raster data from the US Geological Survey.
 #### Open Street Maps
 I opted to use street data from Open Street Maps, which provided me with accurate data on the street locations as well as information on whether there are bike facilities present on a given street. 
 
-<h1><u>Process</u></h1>
-
 ## Gathering Data
 The first order of business was importing my data. I wanted to make sure that I was only pulling Open Street Map data from the cities that I was interested in 
 
-I used OSMNX to fix elevation data to nodes and from there used the add_edge_grades function to create a new column that shows the absolute value of the grade for each street segment. To visualize the grades within the project area I made a plot using matplotlib to show the prelance of different grades in the project area. Not surprisingly the bulk of streets are relatively flat (between 0 and 3%) but the data also includes hilly areas that can be found in Eastern parts of Oakland and Berkeley.
+I used OSMNX to fix elevation data to nodes and from there used the add_edge_grades function to create a new column that shows the absolute value of the grade for each street segment. To visualize the grades within the project area I made a plot using matplotlib to show the prevalence of different grades in the project area. Not surprisingly the bulk of streets are relatively flat (between 0 and 3%) but the data also includes hilly areas that can be found in Eastern parts of Oakland and Berkeley.
 
-I also made a map using osmnx to visualize where the the steep grades. This was helpful just to spot check using my own knowledge of the area. In this map, the the brighter the color the steeper the grade.
+I also made a map using osmnx to visualize the locations of steep street grades. This was helpful just to spot check using my own knowledge of the area. In this map, the brighter the color the steeper the grade.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/98047774/166982225-d2c6d3ce-2e69-4009-88a5-ac56b76792eb.png" />
@@ -34,7 +32,7 @@ I also made a map using osmnx to visualize where the the steep grades. This was 
   <img src="https://user-images.githubusercontent.com/98047774/166983071-e291dcda-faa0-47f3-9433-cf897ee66d9a.png" />
 
 
-I also wanted to investigate the quality of the roads by themselves. I found that the marjority of roads in the project area were rated poor/failing. I mapped the streets onto an interactive folium map.
+I also wanted to investigate the quality of the roads by themselves. I found that the majority of roads in the project area were rated poor/failing. I mapped the streets onto an interactive folium map.
 
 
 <p align = "center"><img src="https://github.com/jgberman/CP255/blob/main/images/pavement_condition_graph.png"></p>
@@ -44,7 +42,7 @@ Side note: I couldn't get the folium map to work because the html file was too l
 The next step was to merge all of the data together into on geodataframe. I did this using a geopandas spatial join between the MTC and OSM geodata. Together I had one data set that I could use to create an index.
 
 ## Bike Index Methodology
-To create my personal bike index, I started by looking at other methodologies that have tried to do the same thing. In my research I came accross a <a href="https://essay.utwente.nl/83741/1/hartanto.pdf">paper</a> looking to establish a bikeability index to enable assessment of Transit Oriented Development. Using this as inspiration, I made my own index to help show the best streets to bike on using pavement condition, street steepness, presence of bike infrastructure and types of roads. By rating these characteristics I was able to develop a method of determining the streets with the most ideal biking characteristics.
+To create my personal bike index, I started by looking at other methodologies that have tried to do the same thing. In my research I came across a <a href="https://essay.utwente.nl/83741/1/hartanto.pdf">paper</a> looking to establish a bikeability index to enable assessment of Transit Oriented Development. Using this as inspiration, I made my own index to help show the best streets to bike on using pavement condition, street steepness, presence of bike infrastructure and types of roads. By rating these characteristics I was able to develop a method of determining the streets with the most ideal biking characteristics.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/98047774/167023572-fd253fde-e320-467d-841b-5bdf3cd546ba.png"
@@ -67,7 +65,7 @@ To get a better view I made a folium map, but again the file was too large for m
 ## Reflections
 The route that was created may be the optimal based on the conditions dictated, but does not match the optimal route that I have found for myself. There are a few reasons for the discrepancy.
 
-<p>1) The methodology does not differentiate between different levels of bicycle infrastructure. A road with a protected bikelane is shown as equivalent as a road with sharrow markings, despite the fact that protected bikelands greatly affects the quality of my ride whereas sharrows have a negligible effect on the quality of my ride.</p>
+<p>1) The methodology does not differentiate between different levels of bicycle infrastructure. A road with a protected bikelane is shown as equivalent as a road with sharrow markings, despite the fact that protected bikelanes greatly affects the quality of my ride whereas sharrows have a negligible effect on the quality of my ride.</p>
 <p>2) The methodology does not differentiate between the different types of roads except for motorways (I excluded limited access highways from the data set). I prefer riding on residential streets with a maximum of two lanes, rather than 4 lane arterials.</p>
 <p>3) The pavement condition index was from 2018. Some roads have been repaved since then, which would change the scores and potentially alter the route.</p>
 
