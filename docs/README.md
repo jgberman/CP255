@@ -27,4 +27,21 @@ I used OSMNX to fix elevation data to nodes and from there used the add_edge_gra
 
 I also made a map using osmnx to visualize where the the steep grades. This was helpful just to spot check using my own knowledge of the area. In this map, the the brighter the color the steeper the grade.
 
-[pci_map](https://github.com/jgberman/CP255/blob/main/pci_map.html)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/98047774/166982225-d2c6d3ce-2e69-4009-88a5-ac56b76792eb.png" />
+</p>
+<p alig<img width="903" alt="Screenshot 2022-05-05 111305" src="https://user-images.githubusercontent.com/98047774/166987256-637ee88a-49f7-4ecc-9d3f-ba7d2bdf1f0c.png">
+  <img src="https://user-images.githubusercontent.com/98047774/166983071-e291dcda-faa0-47f3-9433-cf897ee66d9a.png" />
+</p>
+
+I also wanted to investigate the quality of the roads by themselves. I found that the marjority of roads in the project area were rated poor/failing. I mapped the streets onto an interactive folium map.
+
+
+<p align = "center"><img src="https://github.com/jgberman/CP255/blob/main/images/pavement_condition_graph.png"></p>
+<img width="903" alt="Screenshot 2022-05-05 111305" src="https://user-images.githubusercontent.com/98047774/166987326-0d154096-ba40-44ff-888c-899c42e9c7ae.png">
+Side note: I couldn't get the folium map to work because the html file was too large, so here is just a screen shot to give you an idea. The Reds are streets in poor or failing condition, yellows are streets in fair condition and greens are streets in good condition.
+
+The next step was to merge all of the data together into on geodataframe. I did this using a geopandas spatial join between the MTC and OSM geodata. Together I had one data set that I could use to create an index.
+
+### Bike Index Methodology
+
