@@ -67,9 +67,9 @@ To get a better view I made a folium map, but again the file was too large for m
 ## Reflections
 The route that was created may be the optimal based on the conditions dictated, but does not match the optimal route that I have found for myself. There are a few reasons for the discrepancy.
 
-1) The methodology does not differentiate between different levels of bicycle infrastructure. A road with a protected bikelane is shown as equivalent as a road with sharrow markings, despite the fact that protected bikelands greatly affects the quality of my ride whereas sharrows have a negligible effect on the quality of my ride.
-2) The methodology does not differentiate between the different types of roads except for motorways (I excluded limited access highways from the data set). I prefer riding on residential streets with a maximum of two lanes, rather than 4 lane arterials.
-3) The pavement condition index was from 2018. Some roads have been repaved since then, which would change the scores and potentially alter the route.
+<p>1) The methodology does not differentiate between different levels of bicycle infrastructure. A road with a protected bikelane is shown as equivalent as a road with sharrow markings, despite the fact that protected bikelands greatly affects the quality of my ride whereas sharrows have a negligible effect on the quality of my ride.</p>
+<p>2) The methodology does not differentiate between the different types of roads except for motorways (I excluded limited access highways from the data set). I prefer riding on residential streets with a maximum of two lanes, rather than 4 lane arterials.</p>
+<p>3) The pavement condition index was from 2018. Some roads have been repaved since then, which would change the scores and potentially alter the route.</p>
 
 With time and energy all of these issues could be addressed, but for now I'm just happy to know that it is possible to make this map.
 
