@@ -30,7 +30,7 @@ I also made a map using osmnx to visualize where the the steep grades. This was 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/98047774/166982225-d2c6d3ce-2e69-4009-88a5-ac56b76792eb.png" />
 </p>
-<p alig<img width="903" alt="Screenshot 2022-05-05 111305" src="https://user-images.githubusercontent.com/98047774/166987256-637ee88a-49f7-4ecc-9d3f-ba7d2bdf1f0c.png">
+<img width="903" alt="Screenshot 2022-05-05 111305" src="https://user-images.githubusercontent.com/98047774/166987256-637ee88a-49f7-4ecc-9d3f-ba7d2bdf1f0c.png">
   <img src="https://user-images.githubusercontent.com/98047774/166983071-e291dcda-faa0-47f3-9433-cf897ee66d9a.png" />
 
 
