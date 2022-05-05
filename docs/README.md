@@ -32,7 +32,7 @@ I also made a map using osmnx to visualize where the the steep grades. This was 
 </p>
 <p alig<img width="903" alt="Screenshot 2022-05-05 111305" src="https://user-images.githubusercontent.com/98047774/166987256-637ee88a-49f7-4ecc-9d3f-ba7d2bdf1f0c.png">
   <img src="https://user-images.githubusercontent.com/98047774/166983071-e291dcda-faa0-47f3-9433-cf897ee66d9a.png" />
-</p>
+
 
 I also wanted to investigate the quality of the roads by themselves. I found that the marjority of roads in the project area were rated poor/failing. I mapped the streets onto an interactive folium map.
 
