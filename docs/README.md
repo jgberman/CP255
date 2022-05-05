@@ -26,3 +26,5 @@ The first order of business was importing my data. I wanted to make sure that I 
 I used OSMNX to fix elevation data to nodes and from there used the add_edge_grades function to create a new column that shows the absolute value of the grade for each street segment. To visualize the grades within the project area I made a plot using matplotlib to show the prelance of different grades in the project area. Not surprisingly the bulk of streets are relatively flat (between 0 and 3%) but the data also includes hilly areas that can be found in Eastern parts of Oakland and Berkeley.
 
 I also made a map using osmnx to visualize where the the steep grades. This was helpful just to spot check using my own knowledge of the area. In this map, the the brighter the color the steeper the grade.
+
+[pci_map](https://github.com/jgberman/CP255/blob/main/pci_map.html)
